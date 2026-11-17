@@ -25,6 +25,7 @@
 ### Task 1: Baseline characterization and endpoint classification
 
 Files: pw-session.page-cdp.ts, pw-session.ts, endpoint tests and isolated characterization harness.
+
 - [x] Capture dirty baseline and extension hashes; characterize long waits and temporary session attach/detach.
 - [x] RED: first version request fails, next succeeds; connection retirement invalidates the cached classification.
 - [x] GREEN: retain only successful classifications; invalidate at connection lifecycle boundaries. Keep existing native/extension routing.
@@ -32,6 +33,7 @@ Files: pw-session.page-cdp.ts, pw-session.ts, endpoint tests and isolated charac
 ### Task 2: Executable wait and relay budgets
 
 Files: pw-tools-core.interactions.ts, evaluate-source.ts / wait-predicate.ts, extension-relay.ts, relay-command-timeout.ts, wait/relay tests.
+
 - [x] RED: caller timeout respected, expression/function/body/async false semantics preserved, replacement document rejected.
 - [x] RED: actual relay awaited Runtime survives 30 seconds and completes; ordinary work times out at 30; awaited work times out at 125; disconnect rejects pending work.
 - [x] GREEN: correct third argument, pin Document and clean up handle; choose the command budget by Runtime await semantics.
@@ -39,12 +41,14 @@ Files: pw-tools-core.interactions.ts, evaluate-source.ts / wait-predicate.ts, ex
 ### Task 3: Explicit target fails closed
 
 Files: pw-session.ts and extension-fallback tests.
+
 - [x] RED: missing target, failed metadata and ambiguous same-URL mapping cannot select the only/wrong Page; known target and no-target defaults remain usable.
 - [x] GREEN: remove both outer/extension singleton fallbacks and unproven ordinal URL matching. No session aliases or automatic action retry.
 
 ### Task 4: Ref lifecycle and cold-start compatibility
 
 Files: pw-session.ts, pw-tools-core.interactions.ts, pw-tools-core.snapshot.ts, ref/snapshot integration tests.
+
 - [x] RED: old refs rejected after main navigation, selected iframe retirement, Page replacement; no fallback action on replacement controls; fresh snapshot works; cold start still works.
 - [x] GREEN: distinct stale-ref error; clear bound target caches; bind frame-scoped refs to the resolved Frame; only genuinely cold unknown refs may refresh.
 
