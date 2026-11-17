@@ -61,7 +61,7 @@
     "playwright": "1.58.2",
     "playwright-core": "1.58.2",
     "sharp": "^0.34.5",
-    "tslog": "^4.10.2",
+    "tslog": "^5.5.0",
     "undici": "^7.24.0",
     "ws": "^8.19.0"
   },
