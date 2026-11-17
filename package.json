@@ -73,7 +73,7 @@
     "@vitest/coverage-v8": "^4.1.0",
     "oxfmt": "0.40.0",
     "oxlint": "^1.55.0",
-    "oxlint-tsgolint": "^0.16.0",
+    "oxlint-tsgolint": "^7.0.2007",
     "tsdown": "0.21.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.0"
