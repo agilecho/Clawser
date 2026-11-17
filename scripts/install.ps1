@@ -25,7 +25,7 @@ function Require-Command($Command) {
   }
 }
 
-$RepoUrl = Get-EnvOrDefault "CLAWSER_REPO_URL" "https://github.com/agilecho2022-lgtm/clawser.git"
+$RepoUrl = Get-EnvOrDefault "CLAWSER_REPO_URL" "https://github.com/agilecho/clawser.git"
 $Branch = Get-EnvOrDefault "CLAWSER_BRANCH" "main"
 $InstallDir = Get-EnvOrDefault "CLAWSER_INSTALL_DIR" (Join-Path $HOME ".clawser-src")
 $BinDir = Get-EnvOrDefault "CLAWSER_BIN_DIR" (Join-Path $HOME ".local\bin")

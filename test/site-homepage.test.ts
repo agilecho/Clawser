@@ -21,8 +21,8 @@ describe("Clawser website homepage", () => {
   it("links to the project, support, and privacy destinations", async () => {
     const html = await readHomepage();
 
-    expect(html).toContain("https://github.com/agilecho2022-lgtm/clawser");
-    expect(html).toContain("https://github.com/agilecho2022-lgtm/clawser/issues");
+    expect(html).toContain("https://github.com/agilecho/clawser");
+    expect(html).toContain("https://github.com/agilecho/clawser/issues");
     expect(html).toMatch(/href=["']privacy\.html["']/);
   });
 

@@ -15,7 +15,7 @@ permissions:
 jobs:
   analyze:
     name: Analyze JavaScript and TypeScript
-    runs-on: blacksmith-16vcpu-ubuntu-2404
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7

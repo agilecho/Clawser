@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-REPO_URL="${CLAWSER_REPO_URL:-https://github.com/agilecho2022-lgtm/clawser.git}"
+REPO_URL="${CLAWSER_REPO_URL:-https://github.com/agilecho/clawser.git}"
 BRANCH="${CLAWSER_BRANCH:-main}"
 INSTALL_DIR="${CLAWSER_INSTALL_DIR:-/opt/clawser}"
 
